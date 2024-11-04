@@ -22,10 +22,10 @@ async function checkWeather(city) {
     location_not_found.style.display = "none";
     weather_body.style.display = "flex"
     currCity.innerHTML = `${weather_data.name}`
-    temperature.innerHTML = `${Math.floor(weather_data.main.temp - 273.15)}<sup>°C</sup>`
+    temperature.innerHTML = `${Math.ceil(weather_data.main.temp - 273.15)}<sup>°C</sup>`
     description.innerHTML = `${weather_data.weather[0].description}`
     humidity.innerHTML = `${weather_data.main.humidity}%`
-    wind_speed.innerHTML = `${Math.floor((weather_data.wind.speed)*3.6)}Km/H`
+    wind_speed.innerHTML = `${Math.ceil((weather_data.wind.speed)*3.6)}Km/H`
   
     switch(weather_data.weather[0].main){
       case 'Clouds':
