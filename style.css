@@ -152,7 +152,7 @@ body {
 @media (max-width: 400px) {
     .container {
         width: 80vwvw;
-        height: 70vh;
+        height: 65vh;
     }    
     .humidity{
         margin-left: -10px;
