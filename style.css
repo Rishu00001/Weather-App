@@ -19,10 +19,10 @@ body {
 
 .container {
     width: 400px;
-    background-color: #ffffff;
+    background: none;
     padding: 28px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 20px 18px 9px rgba(0, 0, 0, 0.2);
 }
 .searchbox{
     width: 100%;
@@ -48,9 +48,10 @@ body {
 .searchbox button{
     width: 44px;
     height: 44px;
-    background-color: #e6e5fb;
+    background-color: #c8c6e2;
     border-radius: 50%;
     font-size:18px;
+    box-shadow: 2px 2px 2px black;
 }
 .searchbox button:hover{
     color: #fff;
