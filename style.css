@@ -166,7 +166,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 @media (max-width: 400px) {
     .container {
         width: 80vwvw;
-        height: 65vh;
+        height: 70vh;
     }    
     .humidity{
         margin-left: -10px;
