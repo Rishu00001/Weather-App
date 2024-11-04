@@ -44,9 +44,7 @@ const checkWeather = (city) => {
           break;
         case 'Snow':
           weather_image.src = "./assets/snow.png";
-          break;
-        default:
-          weather_image.src = "./assets/default.png"; 
+          break; 
       }
     })
     .catch((error) => {
