@@ -14,7 +14,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .container {
@@ -45,18 +48,28 @@ body {
     color: #000;
     font-size: 20px;
 }
-.searchbox button{
-    width: 44px;
-    height: 44px;
-    background-color: #c8c6e2;
-    border-radius: 50%;
-    font-size:18px;
-    box-shadow: 2px 2px 2px black;
+.searchbox button {
+    width: 44px; 
+    height: 44px; 
+    background-color: #c8c6e2; 
+    border: none; 
+    border-radius: 50%; 
+    font-size: 18px; 
+    color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
-.searchbox button:hover{
-    color: #fff;
-    background-color: #ababab;
+
+.searchbox button:hover {
+    background-color: #ababab; 
+    color: #fff; 
+    transform: scale(1.1); 
 }
+
 .weather-body{
     display: flex;
     align-items: center;
